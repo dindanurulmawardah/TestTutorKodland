@@ -1,0 +1,402 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+:root {
+  /* font & typography*/
+  --body-font: 'Poppins', sans-serif;
+  --biggest-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  scroll-behavior: smooth;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content {
+  color: white;
+}
+
+.content p {
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.banner .content {
+  max-width: 900px;
+  /* text-align: left; */
+  justify-content: left;
+}
+
+.banner .content h2 {
+  font-size: 10em;
+}
+
+.banner .content p {
+  font-synthesis: 1em;
+}
+
+.btn {
+  font-size: 1em;
+  color: black;
+  background: rgb(9, 215, 223);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 2px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  letter-spacing: 6px;
+}
+
+/* header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+
+header.sticky {
+  background: rgb(255, 218, 151);
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  text-decoration: none;
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header .logo span {
+  color: rgb(255, 144, 40);
+}
+
+header .navigation {
+  position: relative;
+  display: flex;
+}
+
+header .navigation li {
+  list-style: none;
+  margin-left: 30px;
+}
+
+header .navigation li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+header.sticky .navigation li a {
+  color: #111;
+}
+
+header .navigation li a:hover {
+  color: #fff
+}
+
+/* about */
+.about {
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.about h2,
+.about p {
+  text-align: center;
+}
+
+/* PRODUCT */
+.product {
+  background-color: rgb(121, 224, 255);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.product h2 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.product .col-text {
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-4 {
+  padding: 10px;
+  width: 33.0%;
+  justify-content: center;
+  text-align: center;
+}
+
+.col-4 img {
+  width: 50%;
+}
+
+.col4 img {
+  width: 50%;
+}
+
+.btn-product {
+  font-size: 1em;
+  color: black;
+  background: rgb(255, 144, 40);
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 2px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+/* history */
+section {
+  padding: 100px;
+}
+
+.row .col-5 {
+  position: relative;
+  width: 48%;
+}
+
+.titleHistory {
+  color: #111;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.titleHistory span {
+  color: rgb(231, 149, 26);
+  font-size: 1.5em;
+}
+
+.row .col-5 .historyImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.row .col-5 .historyImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.history {
+  background: url(../images/bg-grid.png);
+  padding: 30px;
+  margin: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.history .col-4 h2,
+p {
+  padding: 30px;
+  text-align: left;
+}
+
+.col-4 {
+  width: 60%;
+}
+
+.col-8 {
+  width: 40%;
+}
+
+.col-8 .history-img {
+  padding: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* footer */
+.footer {
+  background: rgb(255, 170, 91);
+  padding: 0;
+  margin: 0;
+}
+
+.footer .col-2 p a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+}
+
+@media (max-width:991px) {
+
+  header,
+  header.sticky {
+    padding: 10px 20px;
+  }
+
+  header .navigation {
+    display: none;
+  }
+
+  header .navigation.active {
+    height: calc(100% - 68px);
+    width: 100%;
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(241, 153, 53);
+  }
+
+  header .navigation li {
+    list-style: none;
+  }
+
+  header .navigation li a {
+    color: #111;
+    font-size: 1.6em;
+  }
+
+  .menuToggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/pop-it.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .menuToggle.active {
+    background: url(../images/close.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  header.sticky .menuToggle {
+    filter: invert();
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  .banner .content h2 {
+    font-size: 3em;
+    color: #fff;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .row .col-4 {
+    position: relative;
+    width: 100%;
+  }
+
+  .row .col-4 img {
+    width: 50%;
+    margin-top: 20px;
+  }
+
+  .history {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .row .col-5 {
+    position: relative;
+    width: 100%;
+  }
+
+  .row .col-5 .historyImg {
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .titleHistory {
+    text-align: center;
+  }
+
+  .history .col-4 h2,
+  p {
+    padding: 30px;
+    text-align: center;
+  }
+
+  @media (max-width:480px) {
+    .banner .content h2 {
+      font-size: 7em;
+    }
+
+    .banner .content p {
+      color: #111;
+      font-weight: 400;
+    }
+
+  }
+}

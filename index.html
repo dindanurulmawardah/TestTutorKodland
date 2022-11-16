@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POP IT</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="" class="logo">POP <span>IT</span></a>
+    <div class="menuToggle" onclick="toggleMenu()"></div>
+    <ul class="navigation">
+      <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#product" onclick="toggleMenu()">Product</a></li>
+      <li><a href="#history" onclick="toggleMenu()">History</a></li>
+      <li><a href="#footer" onclick="toggleMenu()">Footer</a></li>
+    </ul>
+  </header>
+  <section class="banner" id="banner">
+    <div class="content">
+      <h2>POP IT!</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate nobis fuga rem. Commodi dolorum atque,
+        doloremque error nemo facere! Dolores!</p>
+      <a href="" class="btn">Our Product</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>WHAT ITS POP IT <span>?</span></h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deserunt blanditiis reprehenderit ea? Veniam
+      expedita ex rerum! Fugit blanditiis vitae harum magni eius ipsam quibusdam hic nulla rerum doloribus architecto
+      officiis, exercitationem reiciendis neque ad! Consequuntur eum ipsam tempora odit necessitatibus porro, voluptas
+      sit nihil sequi aliquam dolores nesciunt! Aliquid illo corrupti nihil, quasi iure, vel saepe error laborum
+      reprehenderit ipsum vitae culpa doloremque beatae fugit, exercitationem impedit magni quo qui blanditiis.
+      Dignissimos iste deleniti natus eaque, magni sit consequuntur architecto ut ipsam sapiente. Nesciunt laudantium
+      eaque, totam exercitationem in earum, a libero, debitis animi vitae veniam ea ut autem.</p>
+  </section>
+
+
+  <section class="product" id="product">
+    <h2>Our Product</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="assets/images/square.png" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="" class="btn-product">lorem</a>
+      </div>
+      <div class="col-4">
+        <img src="assets/images/amongus.png" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="" class="btn-product">lorem</a>
+      </div>
+      <div class="col-4">
+        <img src="assets/images/round.png" alt="">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <a href="" class="btn-product">lorem</a>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="history" id="history">
+    <div class="row">
+      <div class="col-5">
+        <h2 class="titleHistory"><span>History</span> POP IT</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur facere similique reiciendis qui omnis
+          repellendus nam nemo quasi totam ad harum, atque velit, eius officiis excepturi quibusdam recusandae nesciunt.
+          Delectus! <br><br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam molestiae aliquam dolores
+          harum minima, dignissimos perferendis. Tempore modi illum itaque.</p>
+      </div>
+      <div class="col-5">
+        <div class="historyImg">
+          <img src="assets/images/photo.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="footer" id="footer">
+    <div class="row">
+      <div class="col-2">
+        <p><a href="">KODLAND</a></p>
+      </div>
+      <div class="col-2">
+        <p><a href="">KODLAND</a></p>
+      </div>
+      <div class="col-2">
+        <p><a href="">KODLAND</a></p>
+      </div>
+      <div class="col-2">
+        <p><a href="">KODLAND</a></p>
+      </div>
+      <div class="col-2">
+        <p><a href="">KODLAND</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle("sticky", window.scrollY > 0)
+    });
+
+    function toggleMenu() {
+      const menuToggle = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation');
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+    }
+  </script>
+
+
+</body>
+
+</html>
